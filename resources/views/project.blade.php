@@ -36,7 +36,7 @@
                                     <p class="text-center">{{$project->content}}.</p>
                                     <div class="post-btn">
                                         <a href="" class="btn btn-default">read more</a>
-                                        <a href="#" class="btn btn-default" style="background-color:green">Download</a>
+                    <a href="{{asset($project->file)}}" class="btn btn-default" style="background-color:green" download>Download</a>
                                         <div class="social-icon">
                                             
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->

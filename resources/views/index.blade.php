@@ -31,11 +31,12 @@
         <div class="owl-carousel owl-one owl-theme" >
             <div class="item">
                  <div style="background-color: rgba(255,255,255,.3);">
-                <div class="slider-img "> <img src="{{$first_news->featured}}" alt="" ></div>
+                <div class="slider-img "> <img src="{{$first_news->featured}}" alt=""></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12">
-                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.5);" >
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.1);" >
                                 {{$first_news->content}}
                             </div>
                         </div>
@@ -48,8 +49,8 @@
                 <div class="slider-img"><img src="{{$second_news->featured}}" alt="" ></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12">
-                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.5);" >
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.1);" >
                                 {{$first_news->content}}
                             </div>
                         </div>
@@ -63,8 +64,8 @@
                 <div class="slider-img"><img src="{{$third_news->featured}}" alt="" ></div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12">
-                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.5);" >
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="slider-captions" style="color: red;font-size: 20px;background-color: rgba(255,255,250,.1);" >
                                 {{$first_news->content}}
                             </div>
                         </div>
@@ -82,25 +83,26 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="service-block">
                         
-                            <img src="images/page2_header.png" alt="">
+                            <img src="{{asset('images/page2_header.png')}}" alt="">
                         
                         <div class="service-content">
                             <br>
-                             <h4 style="text-decoration: underline; padding-bottom: 20px "><a href="#"  class="title" >
-                               Industry Investment </a></h4>
-                            <p style="background-color: yellow">Industrial investments are mainly focused on financing industrial companies, industrial investments and mergers & acquisitions. Industrial investments are closely aligned with Finland’s interests and are used to finance companies with industrial operations as well as investments in new plants, new equipment and expansion projects.  Financing packages for M&As are often created to build larger and internationally stronger corporate entities.</p>
+                             <h4 style=" padding-bottom: 20px "><li class="list-group-item">
+                               Industry Investment </li></h4>
+                            <p style="background-color: gray; color: white">Industrial investments are mainly focused on financing industrial companies, industrial investments and mergers & acquisitions. Industrial investments are closely aligned with Finland’s interests and are used to finance companies with industrial operations as well as investments in new plants, new equipment and expansion projects.  Financing packages for M&As are often created to build larger and internationally stronger corporate entities.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="service-block">
                         
-                            <img src="./images/pexels-photo-905874.jpeg" alt="">
+                            <img src="{{asset('images/pexels-photo-905874.jpeg')}}" alt="">
                         
                         <div class="service-content">
-                            <h4 style="text-decoration: underline; padding-bottom: 20px" > <a href="#"  class="title">
-                                <br>
-                               Medical Investment </a></h4>
+                            <br>
+                            <h4 style=" padding-bottom: 20px "><li class="list-group-item">
+                               Medical Investment </li></h4>
+                                
                             <p style="background-color: gray;color: white" >The healthcare sector is made up of many different industries – from pharmaceuticals and devices to health insurers and hospitals – and each has different dynamics. Investments in this sector are affected by many variables, including positive trends related to demographics and negative trends related to reimbursement.
                             Healthcare investing requires a multifaceted approach to understand the underlying drivers
                             </p>
@@ -110,13 +112,13 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="service-block">
                        
-                            <img src="images/pexels-photo-207691.jpeg" alt="">
+                            <img src="{{asset('images/pexels-photo-207691.jpeg')}}"  alt="">
                        
                         <div class="service-content">
                             <br>
-                            <h4 style="text-decoration: underline; padding-bottom: 20px" > <a href="#"  class="title">
-                                Education investment </a></h4>
-                            <p style="background-color: yellow">An educational investment is an agreement between a sponsor and a student, where the sponsor agrees to provide the student with funding for his or her college education in exchange for a fixed percentage of the student’s income after graduation for a set period of time.
+                            <h4 style=" padding-bottom: 20px "><li class="list-group-item">
+                               Education Investment </li></h4>
+                            <p style="background-color: gray; color: white">An educational investment is an agreement between a sponsor and a student, where the sponsor agrees to provide the student with funding for his or her college education in exchange for a fixed percentage of the student’s income after graduation for a set period of time.
                             This is in contrast with traditional student loans with level repayment plans, where the borrower agrees to pay a fixed dollar amount each month for a set period of time.
                              </p>
                         </div>
@@ -125,12 +127,12 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="service-block">
                        
-                            <img src="images/pexels-photo-1072824.jpeg" alt="">
+                            <img src="{{asset('images/pexels-photo-1072824.jpeg')}}"  alt="">
                         
                         <div class="service-content">
-                            <br>
-                             <h4 style="text-decoration: underline; padding-bottom: 20px" > <a href="#"  class="title">
-                               agriculture investment </a></h4>
+                             <br>
+                            <h4 style=" padding-bottom: 20px "><li class="list-group-item">
+                               AgriCulture Investment </li></h4>
                             <p style="background-color: gray; color: white">An investment farm is an agricultural business operation that is purchased and operated with the intention of making a profit, or with the goal of creating a tax deduction for the owner. Agribusiness is the business sector encompassing farming and farming-related commercial activities.
                             Investment farms are owned by investors who typically do not live on the farm or take part in any day-to-day operations. The investor will generally hire farm hands .
                             </p>

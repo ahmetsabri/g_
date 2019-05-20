@@ -47,9 +47,7 @@
                 <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 
             col-md-6 col-sm-12 col-xs-12">
                     <div class="section-title">
-                        <h2>Committed to Local 
-and International Communities
-<strong>(Since 2000)</strong></h2>
+                        <h2>Message of thanks and appreciation</h2>
                     </div>
                 </div>
             </div>
@@ -60,12 +58,12 @@ and International Communities
                             <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 
             col-md-6 col-sm-12 col-xs-12">
                                 <div class="history-img">
-                                    <img src="{{asset('images/history_img_1.jpg')}}" alt="" class="img-circle">
+                                    <img src="{{asset('images/drsafaa.jpg')}}" alt="" class="img-circle" style="height: 300px; width: 300px;">
                                 </div>
                                 <div class="history-content">
-                                    <span>(2000-2005)</span>
-                                    <h3>Sub Heading Title For History</h3>
-                                    <p>Vesm viverra ra placeratraesent quis accumsan nuncace fermentum liberliquam aliquam consequat felis at accumsatiam nisl orciaccumsan at felis idmattis aliquam magna. </p>
+                                    <span><strong style="color: red;">(Dr.Safaa)</strong></span>
+                                    <h3>General Supervisor on graduation projects</h3>
+                                    <p>We send our special thanks to Dr Safa for maintaining our direction in order to help us take out our most important resources </p>
                                 </div>
                             </div>
                         </div>
@@ -73,12 +71,12 @@ and International Communities
                             <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 
             col-md-6 col-sm-12 col-xs-12">
                                 <div class="history-img">
-                                    <img src="{{asset('images/history_img_2.jpg')}}" alt="" class="img-circle">
+                                    <img src="{{asset('images/drosama.jpg')}}" alt="" class="img-circle" style="height: 300px; width: 300px;">
                                 </div>
                                 <div class="history-content">
-                                    <span>(2005-2010)</span>
-                                    <h3>Sub Heading Title For History</h3>
-                                    <p>Vesm viverra ra placeratraesent quis accumsan nuncace fermentum liberliquam aliquam consequat felis at accumsatiam nisl orciaccumsan at felis idmattis aliquam magna. </p>
+                                    <span><strong style="color: red;">(Dr.Osama)</strong></span>
+                                    <h3>Project supervisor</h3>
+                                    <p>We send our special thanks to the doctor for his work with us in guiding us to the best ways to get out our best. </p>
                                 </div>
                             </div>
                         </div>
@@ -86,12 +84,14 @@ and International Communities
                             <div class="col-lg-offset-4 col-lg-4 col-md-offset-3 
             col-md-6 col-sm-12 col-xs-12">
                                 <div class="history-img">
-                                    <img src="{{asset('images/history_img_3.jpg')}}" alt="" class="img-circle">
+                                    <img src="{{asset('images/enggrisha.jpg')}}" alt="" class="img-circle"  style="height: 300px; width: 300px;">
                                 </div>
                                 <div class="history-content">
-                                    <span>(2010-2016)</span>
-                                    <h3>Sub Heading Title For History</h3>
-                                    <p>Vesm viverra ra placeratraesent quis accumsan nuncace fermentum liberliquam aliquam consequat felis at accumsatiam nisl orciaccumsan at felis idmattis aliquam magna. </p>
+                        <span><strong style="color: red;">(Eng.Mohamed Grisha)</strong></span>
+                                    <h3>Assistant Project Supervisor</h3>
+                                    <p>We send our special thanks
+                                     Engineer Mohamed Greisha for his help in guiding us to
+                                    complete this project. </p>
                                 </div>
                             </div>
                         </div>

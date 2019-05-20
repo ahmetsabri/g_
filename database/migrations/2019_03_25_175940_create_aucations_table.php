@@ -17,6 +17,7 @@ class CreateAucationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('featured');
+            $table->string('file');
             $table->text('content');
             $table->timestamps();
         });

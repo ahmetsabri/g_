@@ -23,37 +23,38 @@
                 <div class="col-lg-8 col-lg-8 col-sm-8 col-xs-12">
                     <div class="box bg-light">
                         <h5 class="export-form-title">Fill The Below Form</h5>
-                        <form>
+                        <form action="{{route('contact_us')}}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopr">
                                     <div class="form-group">
                                         <label class="control-label sr-only "></label>
-                                        <input id="name" type="text" placeholder="Name" class="form-control" required>
+                                        <input id="name" type="text" placeholder="Name" class="form-control" required name="name">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopl">
                                     <div class="form-group">
                                         <label class="control-label sr-only"></label>
-                                        <input type="text" placeholder="Email" class="form-control" required>
+                                        <input type="text" placeholder="Email" class="form-control" required name="email">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopr">
                                     <div class="form-group">
                                         <label class="control-label sr-only "></label>
-                                        <input id="phone" type="text" placeholder="Phone" class="form-control" required>
+                                        <input id="phone" type="text" placeholder="Phone" class="form-control" required name="phone">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopl">
                                     <div class="form-group">
                                         <label class="control-label sr-only "></label>
-                                        <input id="subject" type="text" placeholder="subject" class="form-control" required>
+                                        <input id="subject" type="text" placeholder="subject" class="form-control" required name="subject">
                                     </div>
                                 </div>
                                 
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="form-group">
                                         <label class="control-label sr-only"></label>
-                                        <textarea class="form-control" id="textarea" name="textarea" rows="4" placeholder="Messages"></textarea>
+                                        <textarea class="form-control" id="textarea"  rows="4" placeholder="Messages" name="message" required></textarea>
                                     </div>
                                     <button type="submit" name="singlebutton" class="btn btn-default btn-block ">Submit</button>
                                 </div>

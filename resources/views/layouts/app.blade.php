@@ -97,6 +97,9 @@
                             <li class="list-group-item"><a href="{{route('setting.index')}}">Setting</a></li>
                             @endif
                             <li class="list-group-item"><a href="{{route('profile.user')}}">User Profile</a></li>
+                            <li class="list-group-item"><a href="{{route('expert.form.show')}}">All Asks expert</a></li>
+                            <li class="list-group-item"><a href="{{route('contact.us.index')}}">All Cliet Contact</a></li>
+                           
                         </ul>
                     </div>
                     @endif

@@ -38,6 +38,14 @@ Route::get('contactus','frontend_controller@contact_us')->name('contact');
 Route::get('about','frontend_controller@about')->name('about');
 // adviser list
 Route::get('adviser/list','frontend_controller@adviser_list')->name('adviser.list');
+//expert form
+//user connect to expert
+Route::post('store/expert','frontend_controller@store')->name('store.expert');
+//contact us (problems)
+Route::post('contact/us','frontend_controller@contact')->name('contact_us');
+//map
+Route::get('investment/map','frontend_controller@map')->name('map.investment');
+
 });
 
 Auth::routes();
@@ -132,5 +140,21 @@ Route::get('make/admin/{id}','User_controller@admin')->name('user.admin');
 Route::get('user/profile','Profile_controller@index')->name('profile.user');
 //update user profile
 Route::post('user/profile/update','Profile_controller@update')->name('profile.update');
+//expert form
+//show expert form
+Route::get('show/expert','frontend_controller@show')->name('expert.form.show');
+//destroy the question expert
+Route::get('destroy/expert/question/{id}','frontend_controller@destroy_expert_form')->name('expert.form.delete');
+//contact us
+//show contact us
+Route::get('show/contacClient','frontend_controller@show_contact')->name('contact.us.index');
+//destroy contact
+Route::get('destroy/clientContact/{id}','frontend_controller@contact_destroy')->name('contact.destroy');
+
+
+
+
+
+
 
 });

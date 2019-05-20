@@ -57,22 +57,29 @@ class Project_controller extends Controller
      //   dd($request->all());
         $validatedata = $request->validate([
             'title'=>'required',
-            'featured'=>'required',
+            'featured'=>'required|image',
             'content'=>'required',
             'category_id'=>'required',
             'tag'=>'required',
+            'file'=>'required',
         ]);
+        
+        $file = $request->file;
+        $file_new_name = time().$file->getClientOriginalName();
+        $file->move('uploads/project/',$file_new_name);
 
         $featured = $request->featured;
         $featured_new_name = time().$featured->getClientOriginalName();
         $featured->move('uploads/project/',$featured_new_name);
     
+        
 
 
         $project = Project::create([
             'title'=>$request->title,
             'content'=>$request->content,
             'featured'=>'uploads/project/' . $featured_new_name,
+            'file'=>'uploads/project/' . $file_new_name,
             'category_id'=>$request->category_id,
             'slug'=>str_slug($request->title),
             'user_id'=>Auth::id(),
@@ -135,6 +142,15 @@ class Project_controller extends Controller
             $featured_new_name = time().$featured->getClientOriginalName();
             $featured->move('uploads/project/',$featured_new_name);
             $project->featured ='uploads/project/'.$featured_new_name; 
+            
+        }
+
+         if($request->hasFile('file'))
+        {
+            $file = $request->file;
+            $file_new_name = time().$file->getClientOriginalName();
+            $file->move('uploads/project/',$file_new_name);
+            $project->file ='uploads/project/'.$file_new_name; 
             
         }
 

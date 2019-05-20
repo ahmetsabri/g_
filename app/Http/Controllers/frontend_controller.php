@@ -9,6 +9,9 @@ use App\Aucation;
 use App\Project;
 use App\Tag;
 use App\Category;
+use App\Expert;
+use Session;
+use App\Contact;
 class frontend_controller extends Controller
 {
     //
@@ -116,5 +119,69 @@ class frontend_controller extends Controller
         $setting = Setting::first();
         return view('adviser')->with('setting',$setting);
     }
+    //expert form
+    //store data
+    public function store(Request $request)
+    {
+         
+
+        $expert = Expert::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'phone'=>$request->phone,
+            'message'=>$request->message,
+
+        ]);
+        Session::flash('success','form transferd succesfuly');
+        return redirect()->back();
+        
+    }
+    //show data in admin dashboard
+    public function show()
+    {
+        $expert = Expert::all();
+        return view('admin.expert.expert')->with('expert',$expert);
+    }
+    public function destroy_expert_form($id)
+    {
+        $expert = Expert::find($id);
+        $expert->delete();
+        Session::flash('success','the question deleted succesfuly');
+        return redirect()->back();
+    }
+    //end expert questions
+
+    //start contact us
+    public function contact(Request $request)
+    {
+        $contact = Contact::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'phone'=>$request->phone,
+            'subject'=>$request->subject,
+            'message'=>$request->message,
+        ]);
+        Session::flash('success','thank you for contact us');
+        return redirect()->back();
+    }
+    //show contact us
+    public function show_contact()
+    {
+        $contact = Contact::all();
+        return view('admin.contact_us.show')->with('contact',$contact);
+    }
+    //destroy contacClient
+    public function contact_destroy($id)
+    {
+        $contact = Contact::find($id);
+        $contact->delete();
+        Session::flash('success','contactClient Deleted Succesfuly');
+        return redirect()->back();   
+    }
+    public function map()
+    {
+        return view('map');
+    }
+
 }
 

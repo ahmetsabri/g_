@@ -3,7 +3,7 @@
 
 <div class="stunning-header stunning-header-bg-lightviolet">
     <div class="stunning-header-content">
-        <h1 class="stunning-header-title text-center">Search result is : {{$query}}</h1>
+        <h1 class="stunning-header-title text-center"><br>Search result is : {{$query}}</h1>
     </div>
 </div>
 
@@ -23,19 +23,19 @@
                             	<div class="post-block">
                                 <div class="post-content">
                                     <div class="meta">
-                                        <span class="meta-admin">By <a href="#" class="meta-link">Admin</a></span>
-                                        <span>/</span> &nbsp;
+                                        <span class="meta-admin">Publishe in /</span>
+                                       
                                         <span class="meta-date">{{$project->created_at->toFormattedDateString()}}</span>
                                     </div>
-                                    <h2 class="mb20"><a href="#" class="title text-center">{{$project->title}}</a></h2>
+                                    <h2 class="mb20"><a href="#" class="title">{{$project->title}}</a></h2>
                                     <div class="post-img">
                                         <a href="#" class="imghover"><img src="{{$project->featured}}" alt="" class="img-responsive"></a>
                                     </div>
                                     <!-- post block -->
-                                    <p class="text-center">{{$project->title}}</p>
+                                    <p class="text-center">{{str_limit($project->content , 100 )}}</p>
                                     <div class="post-btn">
                                         <a href="{{route('single.project',['slug'=>$project->slug])}}" class="btn btn-default">read more</a>
-                                        <a href="#" class="btn btn-default" style="background-color:green">Download</a>
+                                        <a href="#" class="btn btn-default" download style="background-color:green ">Download</a>
                                         
                                     </div>
                                 </div>

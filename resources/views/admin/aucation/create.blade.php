@@ -18,6 +18,11 @@
     <input type="file" class="form-control" id="featured" name="featured">
   </div>
 
+  <div class="form-group">
+    <label for="featured">Upload file:</label>
+    <input type="file" class="form-control" id="file" name="file">
+  </div>
+
   
   <div class="form-group">
   	<label>Aucation content</label>

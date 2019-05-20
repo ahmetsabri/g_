@@ -2,6 +2,7 @@
 
 @section('content')
 <div class="row">
+
     <div class="col-lg-4">
     <div class="card ">
         <div class="card-header text-center card bg-danger">Published Project</div>
@@ -9,8 +10,8 @@
         <div class="card-body text-center ">
             <h1>{{$project->count()}}</h1>
         </div>
-</div>
-</div>
+    </div>
+    </div>
 
 
 <div class="col-lg-4">
@@ -34,6 +35,7 @@
 </div>
 </div>
 </div>
+
 <br><br>
 
 <div class="row">
@@ -55,6 +57,39 @@
         </div>
 </div>
 </div>
+ 
+   <div class="col-lg-4">
+    <div class="card ">
+        <div class="card-header text-center card bg-info">All Tags</div>
+
+        <div class="card-body text-center ">
+            <h1>{{$tags->count()}}</h1>
+        </div>
+</div>
+</div>
+</div>
+<br><br>
+<div class="row">
+<div class="col-lg-4">
+    <div class="card ">
+        <div class="card-header text-center card bg-info">Question To Expert</div>
+
+        <div class="card-body text-center ">
+            <h1>{{$expert->count()}}</h1>
+        </div>
+</div>
+</div>
+    
+   <div class="col-lg-4">
+    <div class="card ">
+        <div class="card-header text-center card bg-danger">Client Contact</div>
+
+        <div class="card-body text-center ">
+            <h1>{{$contact->count()}}</h1>
+        </div>
+</div>
+</div>
+
 </div>
 
 

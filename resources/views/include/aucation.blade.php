@@ -15,7 +15,7 @@
                             </span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-default mb30">MORE ABOUT THIS AUCTION</a>
+                        <a href="{{asset($aucation->file)}}" class="btn btn-default" style="background-color:green" download>Download This Aucation</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

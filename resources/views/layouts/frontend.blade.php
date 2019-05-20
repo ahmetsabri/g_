@@ -25,6 +25,7 @@
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/fontello.css')}}">
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/toastr.min.css')}}" rel="stylesheet">
    
 </head>
 
@@ -58,6 +59,21 @@
     <script type="text/javascript" src="{{asset('js/fontawesome-all.js')}}"></script>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c0a65923e769568"></script>
+<script type="text/javascript" src="{{asset('js/toastr.min.js')}}"></script>
+<script type="text/javascript">
+
+
+    @if(Session::has('success'))
+    toastr.success("{{Session::get('success')}}");
+
+    @endif
+
+        @if(Session::has('info'))
+        toastr.info("{{Session::get('info')}}");
+
+        @endif
+
+</script>
 
 </body>
 

@@ -23,7 +23,7 @@
                                     </ul>
                                 </li>
                                 
-                                <li><a href="Map.html.html">Map</a>
+                                <li><a href="{{route('map.investment')}}">Map</a>
                                 </li>
                                 <li class="has-sub"><a href="#">Services</a>
                                     <ul>

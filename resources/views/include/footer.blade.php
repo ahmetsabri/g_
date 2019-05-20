@@ -7,8 +7,9 @@
                         <h2 class="text-white">Subscribe </h2>
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                        <form>
-                            <input id="email" class="form-control" type="text" placeholder="Enter Your Email Address" required>
+                        <form action="" method="post">
+                            @csrf
+                            <input id="email" class="form-control" type="email" placeholder="Enter Your Email Address" required name="email">
                             <button type="submit" class="btn btn-primary btn-lg">submit</button>
                         </form>
                     </div>
@@ -76,8 +77,8 @@
             <div class="row">
                 <div class="tiny-footer">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <p>Copyright © All Rights Reserved 2019 for final project
-                        <span> Osama mwafey</span></p>
+                        <p>Copyright © All rights reserved for Graduation projects to 
+                        <span style="color: red;">N.C.A</span></p>
                     </div>
                 </div>
             </div>

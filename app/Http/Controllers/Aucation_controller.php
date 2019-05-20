@@ -43,7 +43,12 @@ class Aucation_controller extends Controller
             'title'=>'required',
             'featured'=>'required|image',
             'content'=>'required',
+            'file' =>'required',
         ]);
+         $file = $request->file;
+        $file_new_name = time().$file->getClientOriginalName();
+        $file->move('uploads/aucation/',$file_new_name);
+
 
         $featured = $request->featured;
         $featured_new_name = time().$featured->getClientOriginalName();
@@ -53,6 +58,7 @@ class Aucation_controller extends Controller
             'title'=>$request->title,
             'content'=>$request->content,
             'featured'=>'uploads/aucation/'.$featured_new_name,
+            'file'=>'uploads/aucation/'.$file_new_name,
 
         ]);
 
@@ -110,6 +116,14 @@ class Aucation_controller extends Controller
             $aucation->featured = 'uploads/aucation/'.$featured_new_name;
         }
     
+        if($request->hasFile('file'))
+        {
+            $file = $request->file;
+            $file_new_name =time().$file->getClientOriginalName();
+            $file->move('uploads/aucation/',$file_new_name);
+            $aucation->file = 'uploads/aucation/'.$file_new_name;
+        }
+
         $aucation->title = $request->title;
         $aucation->content = $request->content;
         $aucation->save();

@@ -8,7 +8,7 @@ class Project extends Model
 {
     //
 
-    protected $fillable = ['title','slug','featured','content','category_id','user_id'];
+    protected $fillable = ['title','slug','featured','content','category_id','user_id','file'];
 
     public function category()
     {
@@ -24,6 +24,12 @@ class Project extends Model
         	{
         		return asset($featured);
         	}
+
+             public function getfileattribute($file)
+            {
+                return asset($file);
+            }
+
     public function user()
     {
         return $this->belongsTo('App\Project');
