@@ -1,0 +1,15 @@
+.slider {
+    margin-bottom: 10px;
+}
+
+.slider-img
+{
+	max-height: 600px;
+	max-width: 100%;
+	
+}
+
+.owl-carousel .owl-stage-outer
+{
+	margin-top:50px;
+}
